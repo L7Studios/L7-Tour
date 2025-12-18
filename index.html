@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   </head>
   <body>
     <div id="unity-container">
@@ -22,22 +21,17 @@
       </div>
       <div id="unity-header">
         <div id="unity-fullscreen-button" onclick="unityInstance.SetFullscreen(1)"></div>
-       <a href="https://l7studio.com.br/">
-          <button id="entervr" style="width: 2rem; background-color: #018189;">
-            <i class="bi bi-house-fill" style="color: white;"></i>
-          </button>
-        </a>
-
+        <button id="entervr" value="Enter VR" disabled>VR</button>
         <div id="unity-build-title">L7_Tour360</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WEBGL.loader.js";
+      var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WEBGL.data",
-        frameworkUrl: buildUrl + "/WEBGL.framework.js",
-        codeUrl: buildUrl + "/WEBGL.wasm",
+        dataUrl: buildUrl + "/Build.data.br",
+        frameworkUrl: buildUrl + "/Build.framework.js.br",
+        codeUrl: buildUrl + "/Build.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "L7Studio",
         productName: "L7_Tour360",
